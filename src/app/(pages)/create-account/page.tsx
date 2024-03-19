@@ -22,7 +22,7 @@ export default async function CreateAccount() {
       <div className={classes.heroImg}>
         <Link href="/">
           <Image
-            src="/phairu-logo-white.svg"
+            src="/phairu-logo-black.svg"
             alt="logo"
             height={23}
             width={250}
