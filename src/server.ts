@@ -6,7 +6,7 @@ import path from 'path'
 dotenv.config({
   path: path.resolve(__dirname, '../.env'),
 })
-//test comment only. Has no relevance
+//test comment only. Has no relevances
 import express from 'express'
 import payload from 'payload'
 
