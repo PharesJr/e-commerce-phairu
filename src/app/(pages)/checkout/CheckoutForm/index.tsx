@@ -11,6 +11,8 @@ import { priceFromJSON } from '../../../_components/Price'
 import { useCart } from '../../../_providers/Cart'
 
 import classes from './index.module.scss'
+import { HR } from '../../../_components/HR'
+import { Input } from '../../../_components/Input'
 
 export const CheckoutForm: React.FC<{}> = () => {
   const stripe = useStripe()
@@ -96,19 +98,25 @@ export const CheckoutForm: React.FC<{}> = () => {
   )
 
   return (
-    <form onSubmit={handleSubmit} className={classes.form}>
-      {error && <Message error={error} />}
-      <PaymentElement />
-      <div className={classes.actions}>
-        <Button label="Back to cart" href="/cart" appearance="secondary" />
-        <Button
-          label={isLoading ? 'Loading...' : 'Checkout'}
-          type="submit"
-          appearance="primary"
-          disabled={!stripe || isLoading}
-        />
-      </div>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit} className={classes.form}>
+        {error && <Message error={error} />}
+        <PaymentElement />
+        <div className={classes.actions}>
+          <Button label="Back to cart" href="/cart" appearance="secondary" />
+          <Button
+            label={isLoading ? 'Loading...' : 'Checkout'}
+            type="submit"
+            appearance="primary"
+            disabled={!stripe || isLoading}
+          />
+        </div>
+
+        <HR />
+        <h6 className={classes.or}>Or</h6>
+        <HR />
+      </form>
+    </div>
   )
 }
 
