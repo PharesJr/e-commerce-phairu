@@ -12,8 +12,6 @@ import { useCart } from '../../../_providers/Cart'
 
 import classes from './index.module.scss'
 import { HR } from '../../../_components/HR'
-import { Input } from '../../../_components/Input'
-
 export const CheckoutForm: React.FC<{}> = () => {
   const stripe = useStripe()
   const elements = useElements()

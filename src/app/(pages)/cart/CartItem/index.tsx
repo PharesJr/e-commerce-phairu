@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { Media } from '../../../_components/Media'
 import { Price } from '../../../_components/Price'
 import Image from 'next/image'
-import { Input } from '../../../_components/Input'
 import { RemoveFromCartButton } from '../../../_components/RemoveFromCartButton'
 
 const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
