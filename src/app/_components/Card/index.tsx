@@ -68,7 +68,7 @@ export const Card: React.FC<{
 
   return (
     <Link href={href} className={[classes.card, className].filter(Boolean).join(' ')}>
-      <div  className={classes.mediaWrapper}>
+      <div className={classes.mediaWrapper}>
         {!metaImage && <div className={classes.placeholder}>No image</div>}
         {metaImage && typeof metaImage !== 'string' && (
           <Media imgClassName={classes.image} resource={metaImage} fill />
@@ -101,10 +101,7 @@ export const Card: React.FC<{
             )}
           </div>
         )} */}
-        {titleToUse && (
-          <h4 className={classes.title}>{titleToUse}
-          </h4>
-        )}
+        {titleToUse && <h4 className={classes.title}>{titleToUse}</h4>}
         {description && (
           <div className={classes.body}>
             {description && <p className={classes.description}>{sanitizedDescription}</p>}

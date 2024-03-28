@@ -1,5 +1,5 @@
 import { ARCHIVE_BLOCK, CALL_TO_ACTION, CONTENT, MEDIA_BLOCK } from './blocks'
-import {  PRODUCT_CATEGORIES } from './categories'
+import { PRODUCT_CATEGORIES } from './categories'
 import { META } from './meta'
 
 export const PRODUCTS = `
